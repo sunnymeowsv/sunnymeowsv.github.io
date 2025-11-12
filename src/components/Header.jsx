@@ -9,41 +9,42 @@ const Header = () => {
   };
 
   const navLinkClass = (path) => {
+    const baseClasses = "text-white text-3xl font-cat-font font-bold hover:text-yellow-100 transition-colors flex items-center gap-2 flex-shrink-0 transform hover:scale-105";
     return isActive(path)
-      ? "text-yellow-300 font-bold border-b-2 border-yellow-300 pb-1"
-      : "hover:text-yellow-200 transition-colors";
+      ? `${baseClasses} bg-yellow-300 text-orange-600 hover:bg-yellow-400 underline`
+      : `${baseClasses} bg-orange-400 text-white hover:bg-orange-300 hover:text-yellow-100`;
   };
 
   return (
-    <nav className="bg-gradient-to-r from-orange-500 to-yellow-500 shadow-lg">
-      <div className="container mx-auto px-4">
+    <nav className="bg-gradient-to-r from-sunny-orange via-bright-orange to-yellow-500 shadow-lg">
+      <div className="px-4">
         <div className="flex justify-between items-center py-4">
-          <Link to="/" className="text-white text-3xl font-bold hover:text-yellow-100 transition-colors flex items-center gap-2">
-            <span className="text-4xl">🐱</span>
+          <Link to="/" className="text-white text-3xl font-cat-font font-bold hover:text-yellow-100 transition-colors flex items-center gap-2 flex-shrink-0 transform hover:scale-105">
+            <img src="/assets/logo-cropped-64.png" alt="Sunny Meow Logo" className="w-12 h-12 rounded-full shadow-lg" />
             Sunny Meow
           </Link>
-          <ul className="flex space-x-8 text-white font-semibold text-lg">
-            <li>
+          <ul className="flex space-x-6 md:space-x-12 text-white font-semibold text-lg flex-wrap justify-end">
+            <li className="mr-4">
               <Link to="/" className={navLinkClass('/')}>
                 Home
               </Link>
             </li>
-            <li>
+            <li className="mr-4">
               <Link to="/about" className={navLinkClass('/about')}>
                 About Us
               </Link>
             </li>
-            <li>
+            <li className="mr-4">
               <Link to="/menu" className={navLinkClass('/menu')}>
                 Menu
               </Link>
             </li>
-            <li>
+            <li className="mr-4">
               <Link to="/gallery" className={navLinkClass('/gallery')}>
                 Gallery
               </Link>
             </li>
-            <li>
+            <li className="mr-4">
               <Link to="/contact" className={navLinkClass('/contact')}>
                 Contact
               </Link>

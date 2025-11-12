@@ -6,18 +6,19 @@ const Homepage = () => {
     <div>
       {/* Hero Section */}
       <div className="text-center py-12 bg-gradient-to-r from-orange-100 to-yellow-100 rounded-lg mb-8">
+        <img src="/assets/logo-cropped-256.png" alt="Sunny Meow Logo" className="w-32 h-32 mx-auto mb-4" />
         <h1 className="text-5xl font-bold mb-4 text-orange-800">Welcome to Sunny Meow</h1>
         <p className="text-xl mb-6 text-gray-700 max-w-3xl mx-auto">
           A California registered nonprofit with 501(c)(3) pending, dedicated to promoting the mutual well-being of cats and people
           through community engagement, education, and therapeutic interaction.
         </p>
+        <h1 className="text-5xl font-bold mb-4 text-orange-800">Our cat lounge is opening soon!</h1>
         <div className="flex gap-4 justify-center">
           <button className="bg-orange-500 hover:bg-orange-600 text-white font-bold py-3 px-6 rounded-lg transition opacity-50 cursor-not-allowed">
-            Menu Coming Soon
+            <Link to="/gallery" className="bg-orange-500 hover:bg-orange-600 text-white font-bold py-3 px-6 rounded-lg transition">
+              See Our Cats
+            </Link>
           </button>
-          <Link to="/gallery" className="bg-blue-500 hover:bg-blue-600 text-white font-bold py-3 px-6 rounded-lg transition">
-            See Our Cats
-          </Link>
         </div>
       </div>
 

@@ -2,9 +2,10 @@ import React from 'react';
 
 const AboutUs = () => {
   return (
-    <div className="max-w-4xl mx-auto">
+    <div>
       {/* Header */}
       <div className="text-center mb-12">
+        <img src="/assets/logo-cropped-128.png" alt="Sunny Meow Logo" className="w-24 h-24 mx-auto mb-4" />
         <h1 className="text-4xl font-bold mb-4 text-gray-800">About Sunny Meow</h1>
         <p className="text-xl text-gray-600">Creating meaningful connections between cats and people since our founding</p>
       </div>

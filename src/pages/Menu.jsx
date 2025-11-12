@@ -49,19 +49,28 @@ const Menu = () => {
   );
 
   return (
-    <div className="max-w-6xl mx-auto">
+    <div>
       {/* Header */}
       <div className="text-center mb-12">
         <h1 className="text-4xl font-bold mb-4 text-gray-800">Menu</h1>
         <p className="text-xl text-gray-600">
-          Coming Soon
+          Enjoy our cat-themed treats and beverages while spending time with our feline friends
         </p>
       </div>
+
+      {/* Beverages */}
+      <MenuCategory title="Beverages" items={beverages} icon="☕" />
+
+      {/* Snacks */}
+      <MenuCategory title="Snacks" items={snacks} icon="🍪" />
+
+      {/* Lunch */}
+      <MenuCategory title="Lunch" items={lunch} icon="🥪" />
 
       {/* Footer Note */}
       <div className="text-center bg-gray-100 p-6 rounded-lg">
         <p className="text-lg text-gray-700">
-          All proceeds support our nonprofit mission to rescue and care for cats in need. 
+          All proceeds support our nonprofit mission to rescue and care for cats in need.
           Thank you for your support! ❤️
         </p>
       </div>

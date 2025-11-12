@@ -10,6 +10,9 @@ module.exports = {
         'sunny-yellow': '#FFD700',
         'meow-blue': '#4A90E2',
         'purr-gray': '#A9A9A9',
+        'sunny-orange': '#FFA500',
+        'bright-orange': '#FF8C00',
+        'warm-orange': '#FF7F50',
       },
       fontFamily: {
         'cat-font': ['Comic Sans MS', 'cursive'],

@@ -24,7 +24,7 @@ const Contact = () => {
   };
 
   return (
-    <div className="max-w-6xl mx-auto">
+    <div className="max-w-4xl mx-auto px-4">
       {/* Header */}
       <div className="text-center mb-12">
         <h1 className="text-4xl font-bold mb-4 text-gray-800">Contact Us</h1>
@@ -33,10 +33,73 @@ const Contact = () => {
         </p>
       </div>
 
-      <div className="grid md:grid-cols-2 gap-12 mb-12">
-        {/* Contact Form */}
-        <div>
-          <h2 className="text-2xl font-bold mb-6 text-gray-800">Send Us a Message</h2>
+      {/* Contact Information */}
+      <div className="mb-12">
+        <h2 className="text-2xl font-bold mb-6 text-gray-800">Contact Information</h2>
+
+        <div className="bg-white p-8 rounded-lg shadow-md mb-6">
+          <div className="mb-6">
+            <h3 className="text-lg font-bold text-gray-800 mb-2 flex items-center">
+              <span className="text-2xl mr-3">📍</span> Location
+            </h3>
+            <p className="text-gray-600 ml-9">
+              Coming Soon! Sunnyvale Downtown Murphy Ave<br />
+              Sunnyvale, CA 94086<br />
+              United States
+            </p>
+          </div>
+
+          <div className="mb-6">
+            <h3 className="text-lg font-bold text-gray-800 mb-2 flex items-center">
+              <span className="text-2xl mr-3">📞</span> Phone
+            </h3>
+            <p className="text-gray-600 ml-9">
+              <a href="tel:+16696669950" className="hover:text-blue-600">(669) 666-9950</a>
+            </p>
+          </div>
+
+          <div className="mb-6">
+            <h3 className="text-lg font-bold text-gray-800 mb-2 flex items-center">
+              <span className="text-2xl mr-3">✉️</span> Email
+            </h3>
+            <p className="text-gray-600 ml-9">
+              <a href="mailto:sunnymeowsv@gmail.com" className="hover:text-blue-600">
+                sunnymeowsv@gmail.com
+              </a>
+            </p>
+          </div>
+
+          <div>
+            <h3 className="text-lg font-bold text-gray-800 mb-2 flex items-center">
+              <span className="text-2xl mr-3">🕐</span> Hours
+            </h3>
+            <div className="text-gray-600 ml-9">
+              <p>Coming Soon</p>
+            </div>
+          </div>
+        </div>
+
+        {/* Social Media */}
+        <div className="bg-gradient-to-r from-orange-100 to-yellow-100 p-8 rounded-lg shadow-md">
+          <h3 className="text-lg font-bold text-gray-800 mb-4">Follow Us</h3>
+          <div className="flex gap-4">
+            <button className="bg-blue-600 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded-lg transition">
+              Facebook
+            </button>
+            <button className="bg-pink-600 hover:bg-pink-700 text-white font-bold py-2 px-4 rounded-lg transition">
+              Instagram
+            </button>
+            <button className="bg-blue-400 hover:bg-blue-500 text-white font-bold py-2 px-4 rounded-lg transition">
+              Twitter
+            </button>
+          </div>
+        </div>
+      </div>
+
+      {/* Contact Form */}
+      <div className="mb-12">
+        <h2 className="text-2xl font-bold mb-6 text-gray-800">Send Us a Message</h2>
+        <div className="max-w-lg mx-auto">
           <form onSubmit={handleSubmit} className="bg-white p-8 rounded-lg shadow-md">
             <div className="mb-4">
               <label className="block text-sm font-bold mb-2 text-gray-700" htmlFor="name">
@@ -124,69 +187,6 @@ const Contact = () => {
               Send Message
             </button>
           </form>
-        </div>
-
-        {/* Contact Information */}
-        <div>
-          <h2 className="text-2xl font-bold mb-6 text-gray-800">Contact Information</h2>
-          
-          <div className="bg-white p-8 rounded-lg shadow-md mb-6">
-            <div className="mb-6">
-              <h3 className="text-lg font-bold text-gray-800 mb-2 flex items-center">
-                <span className="text-2xl mr-3">📍</span> Location
-              </h3>
-              <p className="text-gray-600 ml-9">
-                Coming Soon! Sunnyvale Downtown Murphy Ave<br />
-                Sunnyvale, CA 94086<br />
-                United States
-              </p>
-            </div>
-
-            <div className="mb-6">
-              <h3 className="text-lg font-bold text-gray-800 mb-2 flex items-center">
-                <span className="text-2xl mr-3">📞</span> Phone
-              </h3>
-              <p className="text-gray-600 ml-9">
-                <a href="tel:+16696669950" className="hover:text-blue-600">(669) 666-9950</a>
-              </p>
-            </div>
-
-            <div className="mb-6">
-              <h3 className="text-lg font-bold text-gray-800 mb-2 flex items-center">
-                <span className="text-2xl mr-3">✉️</span> Email
-              </h3>
-              <p className="text-gray-600 ml-9">
-                <a href="mailto:sunnymeowsv@gmail.com" className="hover:text-blue-600">
-                  sunnymeowsv@gmail.com
-                </a>
-              </p>
-            </div>
-
-            <div>
-              <h3 className="text-lg font-bold text-gray-800 mb-2 flex items-center">
-                <span className="text-2xl mr-3">🕐</span> Hours
-              </h3>
-              <div className="text-gray-600 ml-9">
-                <p>Coming Soon</p>
-              </div>
-            </div>
-          </div>
-
-          {/* Social Media */}
-          <div className="bg-gradient-to-r from-orange-100 to-yellow-100 p-8 rounded-lg shadow-md">
-            <h3 className="text-lg font-bold text-gray-800 mb-4">Follow Us</h3>
-            <div className="flex gap-4">
-              <button className="bg-blue-600 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded-lg transition">
-                Facebook
-              </button>
-              <button className="bg-pink-600 hover:bg-pink-700 text-white font-bold py-2 px-4 rounded-lg transition">
-                Instagram
-              </button>
-              <button className="bg-blue-400 hover:bg-blue-500 text-white font-bold py-2 px-4 rounded-lg transition">
-                Twitter
-              </button>
-            </div>
-          </div>
         </div>
       </div>
 
